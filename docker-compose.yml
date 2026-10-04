@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    image: sentinelvision
+    ports:
+      - "8000:8000"
+    volumes:
+      - sentinel-data:/app/data/runs
+
+  dashboard:
+    image: sentinelvision
+    depends_on:
+      - api
+    command: ["streamlit", "run", "dashboard/app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    ports:
+      - "8501:8501"
+
+volumes:
+  sentinel-data:

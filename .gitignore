@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Downloaded / generated data (re-created automatically)
+data/videos/
+data/coco128/
+data/runs/
+data/events.db
+
+# Editors / OS
+.idea/
+.DS_Store
+Thumbs.db
