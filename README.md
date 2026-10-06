@@ -1,4 +1,4 @@
-# 🛡️ SentinelVision: Real-Time Object Detection & Smart Surveillance
+# SentinelVision: Real-Time Object Detection & Smart Surveillance
 
 SentinelVision turns a camera feed into **security and operations events**. It detects people
 and vehicles, tracks them across frames, and applies rules: **restricted-zone intrusion,
